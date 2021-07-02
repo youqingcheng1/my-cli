@@ -3,10 +3,15 @@
 ####配置指令
 
 #####Option：
+
   -V, --version                output the version number
+
   -w, --why                    a why cli
+
   -d, --dest <dest>            a destination folder, 例如： -d /src/components
+
   -f, --framework <framework>  your framework
+  
   -h, --help                   display help for command
 
 #####Commands:
