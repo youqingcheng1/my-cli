@@ -1,8 +1,10 @@
 <!-- 自定义脚手架 -->
 
-####配置指令
+### 配置指令
 
-#####Option：
+#### Option：
+
+```shell
 
   -V, --version                output the version number
 
@@ -11,8 +13,9 @@
   -d, --dest <dest>            a destination folder, 例如： -d /src/components
 
   -f, --framework <framework>  your framework
-  
+
   -h, --help                   display help for command
+```
 
 #####Commands:
   create <opject> [others...]  clone reppsiory into a folder 例如：why create project
