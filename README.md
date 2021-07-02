@@ -17,7 +17,7 @@
 
 ##### Commands:
 ```javascript
-  create <opject> [others...]  clone reppsiory into a folder 例如：why create project
+  create <opject> [others...]  clone reppsiory into a folder 例如：why create project vue2
   addcpn <name>                add vue component, 例如：why addcpn HelloWorld [-d src/components]
   addpage <page>               add vue page and router config, 例如：why addpage Home [-d src/pages]
   addstore <name>              add vue page and store config, 例如：why addstoree
