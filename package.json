@@ -1,8 +1,9 @@
 {
-  "name": "my-cli",
-  "version": "1.1.0",
-  "description": "",
+  "name": "yqc-cli",
+  "version": "2.0.0",
+  "description": "自定义脚手架",
   "main": "index.js",
+  "private": false,
   "bin": {
     "yqc": "index.js"
   },
