@@ -1,7 +1,18 @@
 <!-- 自定义脚手架 -->
 
 > 注意
-> 使用npm link命令，将npm 模块链接到对应的运行项目中去，方便地对模块进行调试和测试
+> 本地调试npm link命令，将npm 模块链接到对应的运行项目中去，方便地对模块进行调试和测试
+> webpack4.0 创建页面，需手动配置入口，暂不支持scss写法
+
+#### 全局安装
+
+```javascript
+  npm i yqc-cli -g
+```
+#### 支持
+
+> webpack4.0 多页面框架 指令创建页面
+> vue2.0 命令创建组件 路由 vuex
 
 #### 配置指令
 
@@ -9,18 +20,17 @@
 
 ```javascript
   -V, --version                output the version number
-  -w, --why                    a why cli
+  -w, --why                    a yqc cli
   -d, --dest <dest>            a destination folder, 例如： -d /src/components
-  -f, --framework <framework>  your framework
   -h, --help                   display help for command
 ```
 
 ##### Commands:
 ```javascript
-  create <opject> [others...]  clone reppsiory into a folder 例如：why create project vue2
-  addcpn <name>                add vue component, 例如：why addcpn HelloWorld [-d src/components]
-  addpage <page>               add vue page and router config, 例如：why addpage Home [-d src/pages]
-  addstore <name>              add vue page and store config, 例如：why addstoree
+  create <opject> [others...]  clone reppsiory into a folder 例如：yqc create project vue2
+  addcpn <name>                add vue component, 例如：yqc addcpn HelloWorld [-d src/components] vue2
+  addpage <page>               add vue page and router config, 例如：yqc addpage Home [-d src/pages] vue2
+  addstore <name>              add vue page and store config, 例如：yqc addstoree [-d src/stores] vue2
   help [command]               display help for command
 ```
 
@@ -43,11 +53,9 @@ ejs 嵌入式javaScript模板化
 open 打开浏览器
 
 >注：commander插件库
-1.option()定义选项 
-
-2.on()监听指令
-
-3.command()创建指令
+>1.option()定义选项 
+>2.on()监听指令
+>3.command()创建指令
 
 ### 思路：
 
@@ -60,10 +68,6 @@ open 打开浏览器
 
 4.打开浏览器
 
-```
-yqc create demo
-```
-
 ##### （2）添加组件
 1.编写对应ejs模块
 
@@ -74,11 +78,17 @@ yqc create demo
 4.放到对应的文件夹中
 
 ```javascript
-yqc addcpn Demo 或者 yqc addcpn demo -d src/components
-yqc addpage Demo 或者 yqc addpage Demo -d src/page
-yqc addstore Demo 或者 yqc addstore Demo -d src/store
+vue2.x
+yqc create Demo vue2
+yqc addcpn Demo vue2 或者 yqc addcpn demo -d src/components vue2
+yqc addpage Demo vue2 或者 yqc addpage Demo -d src/page vue2
+yqc addstore Demo vue2 或者 yqc addstore Demo -d src/store vue2
 ```
-
+```javascript
+webpack4.x
+yqc create Demo webpack4
+yqc add demo webpack4
+```
 
 
 
