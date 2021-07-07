@@ -73,9 +73,9 @@ open 打开浏览器
 ```javascript
 vue2.x
 yqc create Demo vue2
-yqc addcpn Demo vue2 或者 yqc addcpn demo -d src/components vue2
-yqc addpage Demo vue2 或者 yqc addpage Demo -d src/page vue2
-yqc addstore Demo vue2 或者 yqc addstore Demo -d src/store vue2
+yqc addcpn Demo vue2 或者 yqc addcpn demo [-d src/components] vue2
+yqc addpage Demo vue2 或者 yqc addpage Demo [-d src/page] vue2
+yqc addstore Demo vue2 或者 yqc addstore Demo [-d src/store] vue2
 ```
 ```javascript
 webpack4.x
