@@ -3,6 +3,7 @@
 > 注意
 > 本地调试npm link命令，将npm 模块链接到对应的运行项目中去，方便地对模块进行调试和测试
 > webpack4.0 创建页面，需手动配置入口，暂不支持scss写法
+> webpack4.0 多页面需要配置在entryPage配置多入口
 
 #### 全局安装
 
@@ -13,6 +14,7 @@
 
 > webpack4.0 多页面框架 指令创建页面
 > vue2.0 命令创建组件 路由 vuex
+> vue3.0 创建vue3.0
 
 #### 配置指令
 
@@ -23,15 +25,6 @@
   -w, --why                    a yqc cli
   -d, --dest <dest>            a destination folder, 例如： -d /src/components
   -h, --help                   display help for command
-```
-
-##### Commands:
-```javascript
-  create <opject> [others...]  clone reppsiory into a folder 例如：yqc create project vue2
-  addcpn <name>                add vue component, 例如：yqc addcpn HelloWorld [-d src/components] vue2
-  addpage <page>               add vue page and router config, 例如：yqc addpage Home [-d src/pages] vue2
-  addstore <name>              add vue page and store config, 例如：yqc addstoree [-d src/stores] vue2
-  help [command]               display help for command
 ```
 
 #### 目录结构
@@ -88,6 +81,11 @@ yqc addstore Demo vue2 或者 yqc addstore Demo -d src/store vue2
 webpack4.x
 yqc create Demo webpack4
 yqc add demo webpack4
+```
+```javascript
+vue3.0
+yqc create Demo vue3
+yqc addVue3 Demo vue3
 ```
 
 
